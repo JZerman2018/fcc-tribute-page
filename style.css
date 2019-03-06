@@ -10,7 +10,7 @@ body {
 
 #title,
 #img-caption,
-h3 {
+h3, .description {
   text-align: center;
 }
 
