@@ -3,22 +3,36 @@
 }
 
 body {
-  background-color: #e4e6eb;
+ /* background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);*/
+  background-color: #637081;
+  background-image: linear-gradient(315deg, #637081 0%, #7c98b3 74%);
   font-family: Helvetica, sans-serif;
   height: 100%;
 }
 
-#title,
+#title {
+  color: white;
+  text-shadow: 3px 2px black;
+  text-align: center;
+}
+
 #img-caption,
 h3, .description {
   text-align: center;
+  color: white;
+  text-shadow: 3px 2px black;
+}
+
+a {
+  text-shadow: none;
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  max-width: 50%;
   border: 3px solid white;
   border-radius: 2px;
 }
@@ -29,8 +43,10 @@ img {
 
 .timeline-intro {
   text-align: center;
+  color: white;
+  text-shadow: 3px 2px black;
 }
-/* The actual timeline (the vertical ruler) */
+/* The actual timeline  */
 #tribute-info {
   position: relative;
   width: 90%;
@@ -40,7 +56,7 @@ img {
   border-radius: 2px;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* The actual timeline  */
 #tribute-info::after {
   content: "";
   position: absolute;
@@ -61,7 +77,7 @@ img {
 }
 
 /* The circles on the timeline */
-.container::after {
+/*.container::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -72,11 +88,12 @@ img {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-}
+}*/
 
 /* Place the container to the left */
 .container-left {
   left: 0;
+  
 }
 
 /* Place the container to the right */
@@ -91,7 +108,7 @@ img {
   position: absolute;
   top: 22px;
   width: 0;
-  z-index: 1;
+  z-index: -1;
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
@@ -105,7 +122,7 @@ img {
   position: absolute;
   top: 22px;
   width: 0;
-  z-index: 1;
+  z-index: -10;
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
@@ -123,6 +140,17 @@ img {
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+
+.content-left {
+  background-color: #c3d1df;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
